@@ -173,3 +173,8 @@ mask = Image.open('horse_r.png').convert("L").resize(image.size)
 
 imageComposite= Image.composite(image, imageTwo, mask)
 imageComposite.show()
+
+
+
+
+
