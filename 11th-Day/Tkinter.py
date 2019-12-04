@@ -72,9 +72,10 @@ def open_second_window():
 
 def open_third_window():
     third_child = Toplevel(form)
-    scroll_text = scrolledtext.ScrolledText(third_child)
-    scroll_text.insert(END, 'end')
-    scroll_text = scrolledtext.ScrolledText(third_child)
+    st = ScrolledText.ScrolledText(third_child)
+    st.pack()
+    for x in range(20):
+	    st.insert(INSERT, "The Count Is :"+ str(x) + "\n")
 
 
 btn_message = Button(form, text="Open Message", command=message)
