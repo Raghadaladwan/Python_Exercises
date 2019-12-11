@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Python</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <td>Data</td>
+        <td>Trans</td>
+        <td>Symbol</td>
+        <td>Qty</td>
+        <td>Price</td>
+      </thead>
+      {% for row in rows %}
+      <tr>
+        <td>{{row["data"]}}</td>
+        <td>{{row["trans"]}}</td>
+        <td>{{row["symbol"]}}</td>
+        <td>{{row["qty"]}}</td>
+        <td>{{row["price"]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <br />
+    <a href="/">Go back to home page</a>
+  </body>
+</html>

@@ -123,12 +123,15 @@ mainloop()
 
 
 def View_Employee():
+    """
     print("View")
     newChild = Toplevel(root)
     newChild.geometry("1000x700")
+    """
     list=c.execute("SELECT * FROM employees")
     for row in list:
         print(row)
+
     r=0
     for m in list:
          Label(text=m).grid(row=r,column=0)
